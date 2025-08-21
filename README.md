@@ -20,10 +20,6 @@ A full-stack application to help users discover and plan visits to real estate o
 - Email/SMS alerts
 - User accounts and saved listings
 
-## Development Timeline
-
-See `open_house_roadmap.md` for detailed 4-week development plan.
-
 ## Getting Started
 
 Coming soon - setup instructions will be added as we build out the application.
