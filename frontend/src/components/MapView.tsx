@@ -1,11 +1,11 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import Map, { Marker, Popup } from 'react-map-gl/mapbox'
 import 'mapbox-gl/dist/mapbox-gl.css'
 
-// Complete mock data - no backend needed!
-const MOCK_OPEN_HOUSES = [
+// Move mock data to the top
+const ALL_OPEN_HOUSES = [
   {
     id: 1,
     address: "123 Market St, San Francisco, CA",
@@ -64,7 +64,17 @@ interface OpenHouse {
   description: string;
 }
 
-export default function MapView() {
+interface FilterState {
+  priceRange: [number, number];
+  beds: number | null;
+  timeFilter: 'all' | 'today' | 'weekend' | 'open-now';
+}
+
+interface MapViewProps {
+  filters?: FilterState;
+}
+
+export default function MapView({ filters }: MapViewProps) {
   const [viewState, setViewState] = useState({
     longitude: -122.4194,
     latitude: 37.7749,
@@ -72,8 +82,39 @@ export default function MapView() {
   })
   const [selectedHouse, setSelectedHouse] = useState<OpenHouse | null>(null)
 
+  // Filter houses based on current filters
+  const filteredHouses = useMemo(() => {
+    if (!filters) return ALL_OPEN_HOUSES;
+
+    return ALL_OPEN_HOUSES.filter(house => {
+      // Price filter
+      if (house.price < filters.priceRange[0] || house.price > filters.priceRange[1]) {
+        return false;
+      }
+
+      // Beds filter
+      if (filters.beds !== null && house.beds !== filters.beds) {
+        return false;
+      }
+
+      // Time filter (simplified for demo)
+      if (filters.timeFilter === 'weekend' && !house.open_house_time.includes('Sat') && !house.open_house_time.includes('Sun')) {
+        return false;
+      }
+
+      return true;
+    });
+  }, [filters]);
+
   return (
-    <div className="w-full h-screen relative">
+    <div className="w-full h-full relative">
+      {/* Results counter */}
+      <div className="absolute top-4 left-4 bg-white px-3 py-2 rounded-lg shadow-md z-10">
+        <span className="text-sm font-medium">
+          {filteredHouses.length} open houses
+        </span>
+      </div>
+
       <Map
         {...viewState}
         onMove={evt => setViewState(evt.viewState)}
@@ -81,14 +122,18 @@ export default function MapView() {
         mapStyle="mapbox://styles/mapbox/streets-v12"
         mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN}
       >
-        {MOCK_OPEN_HOUSES.map(house => (
+        {filteredHouses.map(house => (
           <Marker
             key={house.id}
             longitude={house.longitude}
             latitude={house.latitude}
             onClick={() => setSelectedHouse(house)}
           >
-            <div className="bg-blue-500 text-white px-3 py-2 rounded-lg cursor-pointer hover:bg-blue-600 text-sm font-semibold shadow-lg transform hover:scale-105 transition-all">
+            <div className={`px-4 py-2 rounded-lg cursor-pointer text-sm font-bold shadow-lg transform hover:scale-110 transition-all border-2 ${
+              selectedHouse?.id === house.id 
+                ? 'bg-red-500 text-white border-red-700' 
+                : 'bg-white text-gray-800 border-gray-300 hover:bg-blue-500 hover:text-white hover:border-blue-700'
+            }`}>
               ${(house.price / 1000000).toFixed(1)}M
             </div>
           </Marker>
