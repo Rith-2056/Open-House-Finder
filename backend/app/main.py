@@ -1,6 +1,12 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.api.endpoints import router
+
+# Direct import instead of relative import
+import sys
+import os
+sys.path.append(os.path.dirname(__file__))
+
+from api.endpoints import router
 
 app = FastAPI(
     title="Open House Finder API",
@@ -8,14 +14,10 @@ app = FastAPI(
     version="1.0.0"
 )
 
-# Configure CORS for Vercel
+# Configure CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:3000",  # Local development
-        "https://*.vercel.app",   # All Vercel domains
-        "https://vercel.app"      # Vercel root
-    ],
+    allow_origins=["*"],  # Allow all for now
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -32,5 +34,5 @@ async def root():
 async def health_check():
     return {"status": "healthy"}
 
-# Vercel serverless handler
+# Vercel handler
 handler = app
