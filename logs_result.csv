@@ -1,0 +1,124 @@
+"TimeUTC","timestampInMs","requestPath","requestMethod","requestQueryString","responseStatusCode","requestId","requestUserAgent","level","environment","branch","vercelCache","type","function","host","deploymentDomain","deploymentId","durationMs","region","maxMemoryUsed","memorySize","message","projectId","traceId","sessionId","invocationId","instanceId","concurrency"
+"2025-08-22 02:55:33",1755831333263,"open-house-finder-backend-4vjn3cgyg.vercel.app/favicon.png","GET","",-1,"xm4rk-1755831332171-66893bf2ffa6","vercel-favicon/1.0","error","production","main","","lambda","/app/main.py","open-house-finder-backend-4vjn3cgyg.vercel.app","open-house-finder-backend-4vjn3cgyg.vercel.app","dpl_5p5G8P5JdFDwuAQiGUuizWCxuzVL",-1,"iad1",-1,-1,"Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 218, in <module>
+if not issubclass(base, BaseHTTPRequestHandler):
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: issubclass() arg 1 must be a class
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_XbbctpefS50U5Hz4hBOPOkjOl3P8","","","01K37V7VBVGBZ0NWERK0R8VD98","",-1
+"2025-08-22 02:55:32",1755831332219,"open-house-finder-backend-4vjn3cgyg.vercel.app/favicon.png","GET","",500,"xm4rk-1755831332171-66893bf2ffa6","vercel-favicon/1.0","error","production","main","","lambda","/app/main.py","open-house-finder-backend-4vjn3cgyg.vercel.app","open-house-finder-backend-4vjn3cgyg.vercel.app","dpl_5p5G8P5JdFDwuAQiGUuizWCxuzVL",1030,"iad1",82,2048,"","prj_XbbctpefS50U5Hz4hBOPOkjOl3P8","","","01K37V7VBVGBZ0NWERK0R8VD98","",1
+"2025-08-22 02:55:30",1755831330065,"open-house-finder-backend-4vjn3cgyg.vercel.app/favicon.png","GET","",-1,"bfj7p-1755831329000-95b32a9d2038","vercel-favicon/1.0","error","production","main","","lambda","/app/main.py","open-house-finder-backend-4vjn3cgyg.vercel.app","open-house-finder-backend-4vjn3cgyg.vercel.app","dpl_5p5G8P5JdFDwuAQiGUuizWCxuzVL",-1,"iad1",-1,-1,"Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 218, in <module>
+if not issubclass(base, BaseHTTPRequestHandler):
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: issubclass() arg 1 must be a class
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_XbbctpefS50U5Hz4hBOPOkjOl3P8","","","01K37V7R8G1JZGRQZ811HXDQKP","",-1
+"2025-08-22 02:55:29",1755831329039,"open-house-finder-backend-4vjn3cgyg.vercel.app/favicon.png","GET","",500,"bfj7p-1755831329000-95b32a9d2038","vercel-favicon/1.0","error","production","main","","lambda","/app/main.py","open-house-finder-backend-4vjn3cgyg.vercel.app","open-house-finder-backend-4vjn3cgyg.vercel.app","dpl_5p5G8P5JdFDwuAQiGUuizWCxuzVL",1013,"iad1",82,2048,"","prj_XbbctpefS50U5Hz4hBOPOkjOl3P8","","","01K37V7R8G1JZGRQZ811HXDQKP","",1
+"2025-08-22 02:55:27",1755831327889,"open-house-finder-backend-4vjn3cgyg.vercel.app/favicon.png","GET","",-1,"2mc5s-1755831326800-db9ae4afcac6","vercel-favicon/1.0","error","production","main","","lambda","/app/main.py","open-house-finder-backend-4vjn3cgyg.vercel.app","open-house-finder-backend-4vjn3cgyg.vercel.app","dpl_5p5G8P5JdFDwuAQiGUuizWCxuzVL",-1,"iad1",-1,-1,"Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 218, in <module>
+if not issubclass(base, BaseHTTPRequestHandler):
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: issubclass() arg 1 must be a class
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_XbbctpefS50U5Hz4hBOPOkjOl3P8","","","01K37V7P3QW3BWEJGD33XJH5N6","",-1
+"2025-08-22 02:55:26",1755831326839,"open-house-finder-backend-4vjn3cgyg.vercel.app/favicon.png","GET","",500,"2mc5s-1755831326800-db9ae4afcac6","vercel-favicon/1.0","error","production","main","","lambda","/app/main.py","open-house-finder-backend-4vjn3cgyg.vercel.app","open-house-finder-backend-4vjn3cgyg.vercel.app","dpl_5p5G8P5JdFDwuAQiGUuizWCxuzVL",1032,"iad1",82,2048,"","prj_XbbctpefS50U5Hz4hBOPOkjOl3P8","","","01K37V7P3QW3BWEJGD33XJH5N6","",1
+"2025-08-22 02:55:26",1755831326757,"open-house-finder-backend-4vjn3cgyg.vercel.app/favicon.ico","GET","",-1,"8jlqh-1755831325662-bd8b7c5ece62","vercel-favicon/1.0","error","production","main","","lambda","/app/main.py","open-house-finder-backend-4vjn3cgyg.vercel.app","open-house-finder-backend-4vjn3cgyg.vercel.app","dpl_5p5G8P5JdFDwuAQiGUuizWCxuzVL",-1,"iad1",-1,-1,"Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 218, in <module>
+if not issubclass(base, BaseHTTPRequestHandler):
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: issubclass() arg 1 must be a class
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_XbbctpefS50U5Hz4hBOPOkjOl3P8","","","01K37V7N06HYX1CEV5WKKS222J","",-1
+"2025-08-22 02:55:25",1755831325702,"open-house-finder-backend-4vjn3cgyg.vercel.app/favicon.ico","GET","",500,"8jlqh-1755831325662-bd8b7c5ece62","vercel-favicon/1.0","error","production","main","","lambda","/app/main.py","open-house-finder-backend-4vjn3cgyg.vercel.app","open-house-finder-backend-4vjn3cgyg.vercel.app","dpl_5p5G8P5JdFDwuAQiGUuizWCxuzVL",1032,"iad1",82,2048,"","prj_XbbctpefS50U5Hz4hBOPOkjOl3P8","","","01K37V7N06HYX1CEV5WKKS222J","",1
+"2025-08-22 02:55:23",1755831323590,"open-house-finder-backend-4vjn3cgyg.vercel.app/favicon.ico","GET","",-1,"w9fbk-1755831322505-7a4cc0241e27","vercel-favicon/1.0","error","production","main","","lambda","/app/main.py","open-house-finder-backend-4vjn3cgyg.vercel.app","open-house-finder-backend-4vjn3cgyg.vercel.app","dpl_5p5G8P5JdFDwuAQiGUuizWCxuzVL",-1,"iad1",-1,-1,"Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 218, in <module>
+if not issubclass(base, BaseHTTPRequestHandler):
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: issubclass() arg 1 must be a class
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_XbbctpefS50U5Hz4hBOPOkjOl3P8","","","01K37V7HXQEGB1S1678QD1P1Z0","",-1
+"2025-08-22 02:55:22",1755831322551,"open-house-finder-backend-4vjn3cgyg.vercel.app/favicon.ico","GET","",500,"w9fbk-1755831322505-7a4cc0241e27","vercel-favicon/1.0","error","production","main","","lambda","/app/main.py","open-house-finder-backend-4vjn3cgyg.vercel.app","open-house-finder-backend-4vjn3cgyg.vercel.app","dpl_5p5G8P5JdFDwuAQiGUuizWCxuzVL",1020,"iad1",82,2048,"","prj_XbbctpefS50U5Hz4hBOPOkjOl3P8","","","01K37V7HXQEGB1S1678QD1P1Z0","",1
+"2025-08-22 02:55:21",1755831321411,"open-house-finder-backend-4vjn3cgyg.vercel.app/favicon.ico","GET","",-1,"pzvll-1755831320300-2f0d528a40f7","vercel-favicon/1.0","error","production","main","","lambda","/app/main.py","open-house-finder-backend-4vjn3cgyg.vercel.app","open-house-finder-backend-4vjn3cgyg.vercel.app","dpl_5p5G8P5JdFDwuAQiGUuizWCxuzVL",-1,"iad1",-1,-1,"Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 218, in <module>
+if not issubclass(base, BaseHTTPRequestHandler):
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: issubclass() arg 1 must be a class
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_XbbctpefS50U5Hz4hBOPOkjOl3P8","","","01K37V7FRJQQB3QWJ08SF64WHD","",-1
+"2025-08-22 02:55:20",1755831320338,"open-house-finder-backend-4vjn3cgyg.vercel.app/favicon.ico","GET","",500,"pzvll-1755831320300-2f0d528a40f7","vercel-favicon/1.0","error","production","main","","lambda","/app/main.py","open-house-finder-backend-4vjn3cgyg.vercel.app","open-house-finder-backend-4vjn3cgyg.vercel.app","dpl_5p5G8P5JdFDwuAQiGUuizWCxuzVL",1056,"iad1",82,2048,"","prj_XbbctpefS50U5Hz4hBOPOkjOl3P8","","","01K37V7FRJQQB3QWJ08SF64WHD","",1
+"2025-08-22 02:55:20",1755831320171,"open-house-finder-backend-4vjn3cgyg.vercel.app/","GET","",-1,"k6fgp-1755831319054-e8b31164b2f2","vercel-favicon/1.0","error","production","main","","lambda","/app/main.py","open-house-finder-backend-4vjn3cgyg.vercel.app","open-house-finder-backend-4vjn3cgyg.vercel.app","dpl_5p5G8P5JdFDwuAQiGUuizWCxuzVL",-1,"iad1",-1,-1,"Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 218, in <module>
+if not issubclass(base, BaseHTTPRequestHandler):
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: issubclass() arg 1 must be a class
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_XbbctpefS50U5Hz4hBOPOkjOl3P8","","","01K37V7EHP87Y9Z6D0SH0WBV2Y","",-1
+"2025-08-22 02:55:19",1755831319094,"open-house-finder-backend-4vjn3cgyg.vercel.app/","GET","",500,"k6fgp-1755831319054-e8b31164b2f2","vercel-favicon/1.0","error","production","main","","lambda","/app/main.py","open-house-finder-backend-4vjn3cgyg.vercel.app","open-house-finder-backend-4vjn3cgyg.vercel.app","dpl_5p5G8P5JdFDwuAQiGUuizWCxuzVL",1059,"iad1",82,2048,"","prj_XbbctpefS50U5Hz4hBOPOkjOl3P8","","","01K37V7EHP87Y9Z6D0SH0WBV2Y","",1
+"2025-08-22 02:55:18",1755831318584,"open-house-finder-backend-4vjn3cgyg.vercel.app/favicon.ico","GET","",-1,"sp9gs-1755831317496-7d4cd3e25e6f","vercel-screenshot/1.0","error","production","main","","lambda","/app/main.py","open-house-finder-backend-4vjn3cgyg.vercel.app","open-house-finder-backend-4vjn3cgyg.vercel.app","dpl_5p5G8P5JdFDwuAQiGUuizWCxuzVL",-1,"iad1",-1,-1,"Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 218, in <module>
+if not issubclass(base, BaseHTTPRequestHandler):
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: issubclass() arg 1 must be a class
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_XbbctpefS50U5Hz4hBOPOkjOl3P8","","","01K37V7D12AMQK166XA89NZXA5","",-1
+"2025-08-22 02:55:18",1755831318503,"open-house-finder-backend-4vjn3cgyg.vercel.app/favicon.ico","GET","",-1,"pm742-1755831317361-380e27b57dca","vercel-screenshot/1.0","error","production","main","","lambda","/app/main.py","open-house-finder-backend-4vjn3cgyg.vercel.app","open-house-finder-backend-4vjn3cgyg.vercel.app","dpl_5p5G8P5JdFDwuAQiGUuizWCxuzVL",-1,"iad1",-1,-1,"Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 218, in <module>
+if not issubclass(base, BaseHTTPRequestHandler):
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: issubclass() arg 1 must be a class
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_XbbctpefS50U5Hz4hBOPOkjOl3P8","","","01K37V7CWRT5TP94TZNY1EHSS4","",-1
+"2025-08-22 02:55:18",1755831318007,"open-house-finder-backend-4vjn3cgyg.vercel.app/","GET","",-1,"8jlqh-1755831315577-723be682d6c2","vercel-favicon/1.0","error","production","main","","lambda","/app/main.py","open-house-finder-backend-4vjn3cgyg.vercel.app","open-house-finder-backend-4vjn3cgyg.vercel.app","dpl_5p5G8P5JdFDwuAQiGUuizWCxuzVL",-1,"iad1",-1,-1,"Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 218, in <module>
+if not issubclass(base, BaseHTTPRequestHandler):
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: issubclass() arg 1 must be a class
+Python process exited with exit status: 1. The logs above can help with debugging the issue.
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 218, in <module>
+if not issubclass(base, BaseHTTPRequestHandler):
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: issubclass() arg 1 must be a class
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_XbbctpefS50U5Hz4hBOPOkjOl3P8","","","01K37V7B8EERC3EM65W0H3J6QZ","",-1
+"2025-08-22 02:55:17",1755831317538,"open-house-finder-backend-4vjn3cgyg.vercel.app/favicon.ico","GET","",500,"sp9gs-1755831317496-7d4cd3e25e6f","vercel-screenshot/1.0","error","production","main","","lambda","/app/main.py","open-house-finder-backend-4vjn3cgyg.vercel.app","open-house-finder-backend-4vjn3cgyg.vercel.app","dpl_5p5G8P5JdFDwuAQiGUuizWCxuzVL",1030,"iad1",82,2048,"","prj_XbbctpefS50U5Hz4hBOPOkjOl3P8","","","01K37V7D12AMQK166XA89NZXA5","",1
+"2025-08-22 02:55:17",1755831317400,"open-house-finder-backend-4vjn3cgyg.vercel.app/favicon.ico","GET","",500,"pm742-1755831317361-380e27b57dca","vercel-screenshot/1.0","error","production","main","","lambda","/app/main.py","open-house-finder-backend-4vjn3cgyg.vercel.app","open-house-finder-backend-4vjn3cgyg.vercel.app","dpl_5p5G8P5JdFDwuAQiGUuizWCxuzVL",1081,"iad1",82,2048,"","prj_XbbctpefS50U5Hz4hBOPOkjOl3P8","","","01K37V7CWRT5TP94TZNY1EHSS4","",1
+"2025-08-22 02:55:17",1755831317319,"open-house-finder-backend-4vjn3cgyg.vercel.app/","GET","",-1,"8s2fk-1755831316154-6503330081d8","vercel-screenshot/1.0","error","production","main","","lambda","/app/main.py","open-house-finder-backend-4vjn3cgyg.vercel.app","open-house-finder-backend-4vjn3cgyg.vercel.app","dpl_5p5G8P5JdFDwuAQiGUuizWCxuzVL",-1,"iad1",-1,-1,"Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 218, in <module>
+if not issubclass(base, BaseHTTPRequestHandler):
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: issubclass() arg 1 must be a class
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_XbbctpefS50U5Hz4hBOPOkjOl3P8","","","01K37V7BQ7BJV1NNKKB23AVJTF","",-1
+"2025-08-22 02:55:17",1755831317285,"open-house-finder-backend-4vjn3cgyg.vercel.app/","GET","",-1,"b67br-1755831316109-89c00fc7e00a","vercel-screenshot/1.0","error","production","main","","lambda","/app/main.py","open-house-finder-backend-4vjn3cgyg.vercel.app","open-house-finder-backend-4vjn3cgyg.vercel.app","dpl_5p5G8P5JdFDwuAQiGUuizWCxuzVL",-1,"iad1",-1,-1,"Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 218, in <module>
+if not issubclass(base, BaseHTTPRequestHandler):
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: issubclass() arg 1 must be a class
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_XbbctpefS50U5Hz4hBOPOkjOl3P8","","","01K37V7BRW2A5RZ9S47PXMA8W5","",-1
+"2025-08-22 02:55:16",1755831316595,"open-house-finder-backend-4vjn3cgyg.vercel.app/","GET","",-1,"s2k8p-1755831315505-ffbe5472670a","vercel-favicon/1.0","error","production","main","","lambda","/app/main.py","open-house-finder-backend-4vjn3cgyg.vercel.app","open-house-finder-backend-4vjn3cgyg.vercel.app","dpl_5p5G8P5JdFDwuAQiGUuizWCxuzVL",-1,"iad1",-1,-1,"Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 218, in <module>
+if not issubclass(base, BaseHTTPRequestHandler):
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: issubclass() arg 1 must be a class
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_XbbctpefS50U5Hz4hBOPOkjOl3P8","","","01K37V7B6B38REWXS1RG8VQ3E6","",-1
+"2025-08-22 02:55:16",1755831316252,"open-house-finder-backend-4vjn3cgyg.vercel.app/","GET","",500,"b67br-1755831316109-89c00fc7e00a","vercel-screenshot/1.0","error","production","main","","lambda","/app/main.py","open-house-finder-backend-4vjn3cgyg.vercel.app","open-house-finder-backend-4vjn3cgyg.vercel.app","dpl_5p5G8P5JdFDwuAQiGUuizWCxuzVL",1017,"iad1",82,2048,"","prj_XbbctpefS50U5Hz4hBOPOkjOl3P8","","","01K37V7BRW2A5RZ9S47PXMA8W5","",1
+"2025-08-22 02:55:16",1755831316199,"open-house-finder-backend-4vjn3cgyg.vercel.app/","GET","",500,"8s2fk-1755831316154-6503330081d8","vercel-screenshot/1.0","error","production","main","","lambda","/app/main.py","open-house-finder-backend-4vjn3cgyg.vercel.app","open-house-finder-backend-4vjn3cgyg.vercel.app","dpl_5p5G8P5JdFDwuAQiGUuizWCxuzVL",1106,"iad1",82,2048,"","prj_XbbctpefS50U5Hz4hBOPOkjOl3P8","","","01K37V7BQ7BJV1NNKKB23AVJTF","",1
+"2025-08-22 02:55:16",1755831316036,"open-house-finder-backend-4vjn3cgyg.vercel.app/","GET","",-1,"8fzxk-1755831313374-1b547b3baf13","vercel-screenshot/1.0","error","production","main","","lambda","/app/main.py","open-house-finder-backend-4vjn3cgyg.vercel.app","open-house-finder-backend-4vjn3cgyg.vercel.app","dpl_5p5G8P5JdFDwuAQiGUuizWCxuzVL",-1,"iad1",-1,-1,"Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 218, in <module>
+if not issubclass(base, BaseHTTPRequestHandler):
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: issubclass() arg 1 must be a class
+Python process exited with exit status: 1. The logs above can help with debugging the issue.
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 218, in <module>
+if not issubclass(base, BaseHTTPRequestHandler):
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: issubclass() arg 1 must be a class
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_XbbctpefS50U5Hz4hBOPOkjOl3P8","","","01K37V79628BVWJKK99PPSV44J","",-1
+"2025-08-22 02:55:15",1755831315989,"open-house-finder-backend-4vjn3cgyg.vercel.app/","GET","",-1,"fcxtg-1755831313346-b235465f6f88","vercel-screenshot/1.0","error","production","main","","lambda","/app/main.py","open-house-finder-backend-4vjn3cgyg.vercel.app","open-house-finder-backend-4vjn3cgyg.vercel.app","dpl_5p5G8P5JdFDwuAQiGUuizWCxuzVL",-1,"iad1",-1,-1,"Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 218, in <module>
+if not issubclass(base, BaseHTTPRequestHandler):
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: issubclass() arg 1 must be a class
+Python process exited with exit status: 1. The logs above can help with debugging the issue.
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 218, in <module>
+if not issubclass(base, BaseHTTPRequestHandler):
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: issubclass() arg 1 must be a class
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_XbbctpefS50U5Hz4hBOPOkjOl3P8","","","01K37V7963FPR7JEDXJBZ469C8","",-1
+"2025-08-22 02:55:15",1755831315726,"open-house-finder-backend-4vjn3cgyg.vercel.app/","GET","",500,"8jlqh-1755831315577-723be682d6c2","vercel-favicon/1.0","error","production","main","","lambda","/app/main.py","open-house-finder-backend-4vjn3cgyg.vercel.app","open-house-finder-backend-4vjn3cgyg.vercel.app","dpl_5p5G8P5JdFDwuAQiGUuizWCxuzVL",1002,"iad1",82,2048,"","prj_XbbctpefS50U5Hz4hBOPOkjOl3P8","","","01K37V7B8EERC3EM65W0H3J6QZ","",1
+"2025-08-22 02:55:15",1755831315659,"open-house-finder-backend-4vjn3cgyg.vercel.app/","GET","",500,"s2k8p-1755831315505-ffbe5472670a","vercel-favicon/1.0","error","production","main","","lambda","/app/main.py","open-house-finder-backend-4vjn3cgyg.vercel.app","open-house-finder-backend-4vjn3cgyg.vercel.app","dpl_5p5G8P5JdFDwuAQiGUuizWCxuzVL",912,"iad1",82,2048,"","prj_XbbctpefS50U5Hz4hBOPOkjOl3P8","","","01K37V7B6B38REWXS1RG8VQ3E6","",1
+"2025-08-22 02:55:13",1755831313603,"open-house-finder-backend-4vjn3cgyg.vercel.app/","GET","",500,"fcxtg-1755831313346-b235465f6f88","vercel-screenshot/1.0","error","production","main","","lambda","/app/main.py","open-house-finder-backend-4vjn3cgyg.vercel.app","open-house-finder-backend-4vjn3cgyg.vercel.app","dpl_5p5G8P5JdFDwuAQiGUuizWCxuzVL",1024,"iad1",82,2048,"","prj_XbbctpefS50U5Hz4hBOPOkjOl3P8","","","01K37V7963FPR7JEDXJBZ469C8","",1
+"2025-08-22 02:55:13",1755831313602,"open-house-finder-backend-4vjn3cgyg.vercel.app/","GET","",500,"8fzxk-1755831313374-1b547b3baf13","vercel-screenshot/1.0","error","production","main","","lambda","/app/main.py","open-house-finder-backend-4vjn3cgyg.vercel.app","open-house-finder-backend-4vjn3cgyg.vercel.app","dpl_5p5G8P5JdFDwuAQiGUuizWCxuzVL",1057,"iad1",82,2048,"","prj_XbbctpefS50U5Hz4hBOPOkjOl3P8","","","01K37V79628BVWJKK99PPSV44J","",1
