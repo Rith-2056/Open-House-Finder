@@ -34,7 +34,7 @@ export default function MapView() {
         setLoading(true)
         console.log('Fetching open houses from backend...')
         
-        const response = await fetch('http://localhost:8000/api/v1/open-houses')
+        const response = await fetch('https://your-backend.railway.app/api/v1/open-houses')
         
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`)
