@@ -1,47 +1,82 @@
 from fastapi import APIRouter
+import sys
+import os
+import random
 
 router = APIRouter()
 
-# Mock data that matches your database structure
-MOCK_OPEN_HOUSES = [
-    {
-        "id": 1,
-        "address": "123 Market St, San Francisco, CA",
-        "price": 1200000,
-        "beds": 2,
-        "baths": 2,
-        "latitude": 37.7749,
-        "longitude": -122.4194,
-        "open_house_time": "Sat 1-4pm",
-        "description": "Beautiful downtown condo with city views"
-    },
-    {
-        "id": 2,
-        "address": "456 Valencia St, San Francisco, CA",
-        "price": 950000,
-        "beds": 1,
-        "baths": 1,
-        "latitude": 37.7849,
-        "longitude": -122.4094,
-        "open_house_time": "Sun 2-5pm",
-        "description": "Charming Mission district apartment"
-    }
-]
+def get_dynamic_mock_data():
+    """Get fresh mock data from the scraper"""
+    try:
+        # Add the data-ingestion directory to path
+        ingestion_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), 'data-ingestion')
+        if ingestion_path not in sys.path:
+            sys.path.append(ingestion_path)
+        
+        from scrapers.mock_scraper import MockScraper
+        from processors.data_cleaner import DataCleaner
+        
+        # Generate fresh mock data
+        scraper = MockScraper()
+        raw_data = scraper.scrape()
+        
+        # Clean the data
+        cleaner = DataCleaner()
+        cleaned_data = cleaner.clean_listings(raw_data)
+        
+        # Convert to API format
+        formatted_data = []
+        for i, listing in enumerate(cleaned_data[:10]):  # Limit to 10 for performance
+            formatted_data.append({
+                "id": i + 1,
+                "address": listing.get('address', 'Unknown Address'),
+                "price": listing.get('price', 0),
+                "beds": listing.get('beds', 1),
+                "baths": listing.get('baths', 1),
+                "latitude": listing.get('latitude', 37.7749 + random.uniform(-0.1, 0.1)),
+                "longitude": listing.get('longitude', -122.4194 + random.uniform(-0.1, 0.1)),
+                "open_house_time": listing.get('open_house_time', 'TBD'),
+                "description": listing.get('description', 'Beautiful property')
+            })
+        
+        return formatted_data
+        
+    except Exception as e:
+        print(f"Error getting dynamic data: {e}")
+        # Fallback to static data if scraper fails
+        return [
+            {
+                "id": 1,
+                "address": "123 Market St, San Francisco, CA",
+                "price": 1200000,
+                "beds": 2,
+                "baths": 2,
+                "latitude": 37.7749,
+                "longitude": -122.4194,
+                "open_house_time": "Sat 1-4pm",
+                "description": "Beautiful downtown condo with city views"
+            }
+        ]
+
+@router.get("/")
+def read_root():
+    return {"message": "Open House Finder API", "status": "active"}
+
+@router.get("/health")
+def health_check():
+    return {"status": "healthy", "service": "open-house-api"}
 
 @router.get("/open-houses")
-async def get_open_houses():
-    """Get all open house listings"""
-    return {"open_houses": MOCK_OPEN_HOUSES}
-
-@router.get("/open-houses/{house_id}")
-async def get_open_house(house_id: int):
-    """Get a specific open house by ID"""
-    house = next((h for h in MOCK_OPEN_HOUSES if h["id"] == house_id), None)
-    if not house:
-        return {"error": "Open house not found"}
-    return house
+def get_open_houses():
+    """Get current open house listings with fresh mock data"""
+    houses = get_dynamic_mock_data()
+    return {"open_houses": houses}
 
 @router.post("/test-data")
-async def create_test_data():
-    """Mock test data creation"""
-    return {"message": "Test data created successfully! (using mock data)"}
+def create_test_data():
+    """Endpoint to refresh mock data"""
+    houses = get_dynamic_mock_data()
+    return {
+        "message": "Dynamic test data generated successfully!",
+        "count": len(houses)
+    }

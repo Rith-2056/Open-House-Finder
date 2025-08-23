@@ -1,0 +1,74 @@
+[
+  {
+    "source": "mock",
+    "address": "258 Folsom St, San Francisco, Ca",
+    "price": 85394598,
+    "beds": 1,
+    "baths": 3.0,
+    "open_house_time": "Sun 3-6pm",
+    "description": "Historic building converted to modern loft space",
+    "latitude": 37.817517,
+    "longitude": -122.436758,
+    "listing_url": "https://example.com/listing/1"
+  },
+  {
+    "source": "mock",
+    "address": "987 Lombard St, San Francisco, Ca",
+    "price": 137998514,
+    "beds": 2,
+    "baths": 2.5,
+    "open_house_time": "Sat 2-5pm",
+    "description": "Charming Victorian home with original details and garden",
+    "latitude": 37.818323,
+    "longitude": -122.385206,
+    "listing_url": "https://example.com/listing/2"
+  },
+  {
+    "source": "mock",
+    "address": "789 Mission St, San Francisco, Ca",
+    "price": 91934202,
+    "beds": 2,
+    "baths": 1.5,
+    "open_house_time": "Sun 3-6pm",
+    "description": "Contemporary apartment with hardwood floors and balcony",
+    "latitude": 37.752991,
+    "longitude": -122.433489,
+    "listing_url": "https://example.com/listing/3"
+  },
+  {
+    "source": "mock",
+    "address": "789 Mission St, San Francisco, Ca",
+    "price": 121338228,
+    "beds": 4,
+    "baths": 2.0,
+    "open_house_time": "Sat 2-5pm",
+    "description": "Luxury penthouse with panoramic bay views",
+    "latitude": 37.733355,
+    "longitude": -122.413358,
+    "listing_url": "https://example.com/listing/4"
+  },
+  {
+    "source": "mock",
+    "address": "789 Mission St, San Francisco, Ca",
+    "price": 156142111,
+    "beds": 1,
+    "baths": 2.0,
+    "open_house_time": "Sun 1-4pm",
+    "description": "Cozy starter home in quiet residential neighborhood",
+    "latitude": 37.750971,
+    "longitude": -122.431571,
+    "listing_url": "https://example.com/listing/5"
+  },
+  {
+    "source": "mock",
+    "address": "425 1St St, San Francisco, Ca",
+    "price": 113974227,
+    "beds": 2,
+    "baths": 3.0,
+    "open_house_time": "Sun 1-4pm",
+    "description": "Stunning modern condo with city views and updated kitchen",
+    "latitude": 37.758598,
+    "longitude": -122.453689,
+    "listing_url": "https://example.com/listing/6"
+  }
+]
